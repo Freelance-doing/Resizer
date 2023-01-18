@@ -2,6 +2,7 @@ import sys
 from PySide6 import QtCore, QtWidgets, QtGui
 from os import listdir, remove
 from PIL import Image
+import os
 import resources
 
 
