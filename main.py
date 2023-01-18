@@ -191,7 +191,7 @@ class MyWidget(QtWidgets.QWidget):
                 msg.setWindowTitle("Attention!")
                 msg.setText("Firstly, we converted your png images to jpg images, now you can press the button RESIZE!")
                 msg.setIcon(QtWidgets.QMessageBox.Warning)
-                msg.exec_()
+                msg.exec()
                 self.cb.click()
             elif len(listdir(self.base_path)) == 0:
                 msg = QtWidgets.QMessageBox()
