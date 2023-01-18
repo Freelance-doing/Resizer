@@ -1,7 +1,6 @@
 import sys
 from PySide6 import QtCore, QtWidgets, QtGui
-from os import listdir, remove, mkdir
-from os.path import exists
+from os import listdir, remove
 from PIL import Image
 import resources
 
@@ -199,7 +198,7 @@ class MyWidget(QtWidgets.QWidget):
                 msg.setWindowTitle("Attention!")
                 msg.setText("Your base path is empty, make sure you've chosen the correct one, then click the button RESIZE!")
                 msg.setIcon(QtWidgets.QMessageBox.Warning)
-                msg.exec_()
+                msg.exec()
             else:
                 temp = list()
                 self.pbr.setValue(0)
